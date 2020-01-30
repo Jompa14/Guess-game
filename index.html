@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="youtube_focus.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap"> 
 
@@ -15,17 +15,18 @@
         </h1>
 
         <p>
-            Try to guess what a number between 0 - 100!
+            Try to guess a number between 0 - 100! <br>
             You have just 10 chances.
         </p>
-        <div> ultimos palpites </div>
-        <div> auto ou baixo </div>
+        <div class="ultimosPalpites"></div>
+        <div class="autoOuBaixo"></div>
 
-        <input type="text">
-        <button>
-            Guess
-        </button>
+        <label for="campoPalpite">Type your guess: </label> 
+    <br>
+        <input type="text" id="campoPalpite" class="campoPalpite"> 
+    <br>
+        <input type="submit" value="Enviar palpite" class="envioPalpite">
     </body>
 
-    <script> src="guess.js"</script>
+    <script src="guess.js"></script>
 </html>
