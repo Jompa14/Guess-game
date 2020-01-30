@@ -1,1 +1,19 @@
+* {
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
+html {
+    background-color: midnightblue;
+    color: tomato;
+    font-family: Quicksand;
+}
+label {
+    padding: 10px;
+}
+
+input {
+    margin: 10px;
+}
