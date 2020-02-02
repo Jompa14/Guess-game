@@ -41,6 +41,14 @@ function conferirPalpite() {
     campoPalpite.focus();
 }
     envioPalpite.addEventListener('click', conferirPalpite);
+    var input = document.getElementById("campoPalpite");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("envio").click();
+      }
+    }); 
+
     function configFimDeJogo() {
         campoPalpite.disabled = true;
         envioPalpite.disabled = true;
@@ -49,7 +57,7 @@ function conferirPalpite() {
         document.body.appendChild(botaoReinicio);
         botaoReinicio.addEventListener('click', reiniciarJogo);
       }
-      
+
       function reiniciarJogo() {
         contagemPalpites = 1;
       
