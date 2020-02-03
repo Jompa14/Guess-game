@@ -16,4 +16,23 @@ label {
 
 input {
     margin: 10px;
+    text-align: center;
+}
+
+#campoPalpite {
+    border: 2px solid palevioletred;
+    border-radius: 20px;
+    background-color: pink;
+    width: 50px;
+    height: 25px;
+}
+
+#envio {
+    font-size: large;
+    border: 3px solid black;
+    border-radius: 8px;
+    color: black;
+    text-emphasis: bold;
+    padding: 4px;
+    background-color: tomato;
 }
