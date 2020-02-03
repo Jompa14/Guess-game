@@ -13,27 +13,27 @@ var botaoReinicio;
 function conferirPalpite() {
     var palpiteUsuario = Number(campoPalpite.value);
     if (contagemPalpites === 1) {
-      palpites.textContent = 'Palpites anteriores: ';
+      palpites.textContent = 'Last tries: ';
     }
     palpites.textContent += palpiteUsuario + ' ';
    
     if (palpiteUsuario === numeroAleatorio) {
-      ultimoResultado.textContent = 'Parabéns! Você acertou!';
+      ultimoResultado.textContent = 'CONGRATS!! YOU GUESSED';
       ultimoResultado.style.backgroundColor = 'green';
       baixoOuAlto.textContent = '';
       configFimDeJogo();
     } else if (contagemPalpites === 10) {
-      ultimoResultado.textContent = '!!!FIM DE JOGO!!!';
+      ultimoResultado.textContent = '!!!GAME OVER!!!';
       baixoOuAlto.textContent = '';
       configFimDeJogo();
     } else {
-      ultimoResultado.textContent = 'Errado!';
+      ultimoResultado.textContent = 'NO!';
       ultimoResultado.style.backgroundColor = 'tomato';
       ultimoResultado.style.color = 'white';
       if(palpiteUsuario < numeroAleatorio) {
-        baixoOuAlto.textContent = 'Seu palpite está muito baixo!';
+        baixoOuAlto.textContent = 'Your guess is too low!';
       } else if(palpiteUsuario > numeroAleatorio) {
-        baixoOuAlto.textContent = 'Seu palpite está muito alto!';
+        baixoOuAlto.textContent = 'Your guess is too high!';
       }
     }
     contagemPalpites++;
@@ -53,7 +53,7 @@ function conferirPalpite() {
         campoPalpite.disabled = true;
         envioPalpite.disabled = true;
         botaoReinicio = document.createElement('button');
-        botaoReinicio.textContent = 'Iniciar novo jogo';
+        botaoReinicio.textContent = 'Restart game';
         document.body.appendChild(botaoReinicio);
         botaoReinicio.addEventListener('click', reiniciarJogo);
       }
