@@ -6,10 +6,15 @@
 }
 
 html {
-    background-color: midnightblue;
-    color: tomato;
-    font-family: Quicksand;
+    background-color: rgb(7, 0, 7);
+    color: rgb(255, 230, 0);
+    font-family: 'Fira Code', monospace;
 }
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
 label {
     padding: 10px;
 }
@@ -20,9 +25,9 @@ input {
 }
 
 #campoPalpite {
-    border: 2px solid palevioletred;
+    border: 2px solid rgb(240, 206, 17);
     border-radius: 20px;
-    background-color: pink;
+    background-color: rgba(255, 238, 0, 0.589);
     width: 50px;
     height: 25px;
 }
@@ -34,5 +39,5 @@ input {
     color: black;
     text-emphasis: bold;
     padding: 4px;
-    background-color: tomato;
+    background-color: rgb(255, 205, 40);
 }
